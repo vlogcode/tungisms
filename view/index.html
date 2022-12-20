@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISMS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<style>
+    tr,th ,td{
+        text-align: left;
+    }
+    tr{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0px;
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px 20px;
+    }
+    form{
+        max-width: 1150px;
+    }
+    #myInput{
+        max-width: 280px;
+        padding: 7px 15px;
+        border: 2px solid #464646;
+        border-radius: 16px;
+        outline: unset;
+        font-size: 16px;
+      width: 100%;
+        margin: 0 auto;
+
+    }
+    .num{
+        color: red;
+        font-size: 24px;
+    }
+    .pp{
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 2px;
+    }
+    .sp{
+        text-align: center;
+        color: red;
+        margin-bottom: 20px;
+    }
+    .question{
+        display: flex;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .question div{
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #464646;
+    }
+    .gif {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        flex-wrap: wrap;
+       
+    }
+    .gif img{
+        width: 60px;
+        height: 60px;
+        margin: 0px 20px;
+        margin-bottom: 20px;
+    }
+</style>
+<body>
+   <div class="content">
+   
+    <h2>67/100 câu</h2>
+<p class="pp">Nhập ( <span style="color: red;">copy câu hỏi dán vào tìm cho nhanh </span>) câu hỏi hoặc số thứ tự câu </p> 
+<span class="sp">( số thứ tự câu được ghi ở mỗi câu hỏi trên đề thi)</span> 
+<input id="myInput" type="text" placeholder="Search.." >
+<div class="gif">
+    <img src="../img/gif1.gif" alt="">
+    <img src="../img/tonton-friends.gif" alt="">
+    <img src="../img/yuta.gif" alt="">
+    <img src="../img/tonton2.gif" alt="">
+    <img src="../img/tonton3r.gif" alt="">
+    <img src="../img/tonton4.gif" alt="">
+</div>
+<div class="question">
+    <div>9</div>
+    <div>14</div>
+    <div>16</div>
+    <div>19</div>
+    <div>21</div>
+    <div>25</div>
+    <div>26</div>
+    <div>31</div>
+    <div>36</div>
+    <div>39</div>
+    <div>40</div>
+    <div>41</div>
+    <div>44</div>
+    <div>48</div>
+    <div>60</div>
+    <div>64</div>
+    <div>70</div>
+    <div>73</div>
+    <div>82</div>
+    <div>83</div>
+    <div>84</div>
+    <div>89</div>
+    <div>90</div>
+    <div>91</div>
+    <div>92</div>
+    <div>93</div>
+    <div>94</div>
+    <div>95</div>
+    <div>96</div>
+    <div>97</div>
+    <div>98</div>
+    <div>99</div>
+    <div>100</div>
+</div>
+<span class="sp" style="margin-top: 10px;">số câu hỏi ko có</span>
+
+    <form action="#">
+        <table>
+           <thead></thead>
+           <tbody id="myTable">
+            <tr>
+                <th>Tại sao phải luôn đeo thẻ trong văn phòng làm việc? <span class="num">(1)</span></th>
+                <td><input type="radio" disabled >Để thẻ không bị rơi mất</td>
+                <td><input type="radio" checked>Để giúp mọi người nhận diện nhân viên công ty, dễ phát hiện và cảnh giác với người lạ</td>
+                <td><input type="radio" disabled >vì không có chỗ cất thẻ</td>
+            </tr>
+            <tr>
+                <th>Đồng nghiệp quên thẻ nhân viên và mượn thẻ của bạn, đâu là hành xử đúng quy định? <span class="num">(2)</span></th>
+                <td><input type="checkbox" checked >Nói đồng nghiệp đó liên hệ với Hành chính để mượn thẻ tạm.</td>
+                <td><input type="checkbox" disabled >Bảo đồng nghiệp đó mượn thẻ của đồng nghiệp khác.</td>
+                <td><input type="checkbox" disabled >Cho đồng nghiệp đó mượn thẻ.</td>
+                <td><input type="checkbox" checked >Từ chối cho mượn.</td>
+            </tr>
+            <tr>
+                <th>Rủi ro khi bảo quản thẻ không cẩn thận (đánh rơi thẻ, để quên thẻ trong nhà VS, để thẻ trên mặt bàn làm việc khi ra về...)? <span class="num">(3)</span></th>
+                <td><input type="checkbox" checked >Bị liên đới trách nhiệm nếu có sự cố xảy ra từ việc truy nhập bằng thẻ của mình.</td>
+                <td><input type="checkbox" checked >Bị người khác lấy mất.</td>
+                <td><input type="checkbox" checked >Bị rơi vào tay người xấu, có thể sẽ xâm nhập văn phòng, đánh cắp tài sản, đánh cắp thông tin…</td>
+            </tr>
+            <tr>
+                <th>Khi bị mất thẻ, bạn cần xử lý như thế nào cho đúng? <span class="num">(4)</span></th>
+                <td><input type="checkbox" checked >Liên hệ với bộ phận Hành chính để xin cấp thẻ tạm và làm thủ tục xin cấp lại thẻ.</td>
+                <td><input type="checkbox" disabled >Khi nào có mặt ở văn phòng thì mới thông tin cho bộ phận nhân sự (HR) để khóa thẻ</td>
+                <td><input type="checkbox" checked >Thông tin ngay cho bộ phận nhân sự (HR) báo mất thẻ để thẻ được khóa kịp thời.</td>
+            </tr>
+            <tr>
+                <th>Các quy định cần tuân thủ đối với thẻ nhân viên? <span class="num">(5)</span></th>
+                <td><input type="checkbox" checked >Luôn đeo thẻ trong văn phòng Công ty.</td>
+                <td><input type="checkbox" checked >Bảo quản thẻ cẩn thận.</td>
+                <td><input type="checkbox" disabled >Nếu là đồng nghiệp thì có thể cho mượn thẻ</td>
+                <td><input type="checkbox" checked >Khi quên thẻ cần liên hệ với Hành chính xin cấp thẻ tạm.</td>
+            </tr>
+            <tr>
+                <th>Khi thấy có người lạ không đeo thẻ tự đi lại trong văn phòng Công ty, bạn nên làm gì? <span class="num">(6)</span></th>
+                <td><input type="radio" checked >Hỏi xác nhận người đó là ai, nếu thấy khả nghi thì đưa người đó qua làm việc với bộ phận hành chính</td>
+                <td><input type="radio" disabled >Không làm gì vì việc ra vào văn phòng đã có kiểm soát bằng cửa security.</td>
+               
+            </tr>
+            <tr>
+                <th>Hành động nào sau đây có thể gây lây nhiễm virus?<span class="num">(7)</span></th>
+                <td><input type="checkbox" checked > Click vào các link lạ, file lạ.</td>
+                <td><input type="checkbox" checked> Truy cập vào các Website không rõ nguồn gốc.</td>
+                <td><input type="checkbox" checked > Cắm các thiết bị cá nhân vào máy tính.</td>
+                <td><input type="checkbox" checked >Cài đặt các phần mềm không bản quyền..</td>
+            </tr>
+            <tr>
+                <th>Theo quy định công ty, những cách phòng tránh virus, mã độc là gì <span class="num">(8)</span></th>
+                <td><input type="checkbox" checked >Tránh mở các file đính kèm mail mà không rõ nguồn gốc, tránh click vào các đường link lạ,các web crack,web đen..</td>
+                <td><input type="checkbox" checked >không kết nối với các thiết bị chưa được cấp phép với máy tính làm việc</td>
+                <td><input type="checkbox" checked >Máy tính cần được cài đặt chương trình diệt virus, được update tự động và được đặt lịch diệt virus định kỳ hàng tuần ở chế độ FullScan</td>
+                <td><input type="checkbox" checked >Không tự ý download và cài đặt các phần mền</td>
+            </tr>
+            <tr>
+                <th>Khi máy tính bị nhiễm virus, bạn cần làm gì?<span class="num">(10)</span></th>
+                <td><input type="checkbox" checked >Thông báo ngay cho Network/ IT nhờ support (nếu không có IT thì nhờ nhân viên có kinh nghiệm support).</td>
+                <td><input type="checkbox" checked >Rút ngay đường truyền mạng hoặc ngắt ngay kết nối Wifi.</td>
+                <td><input type="checkbox" checked >Tắt máy tính</td>
+            </tr>
+            <tr>
+                <th>Đâu là một trong những nguyên do khiến máy tính bị nhiễm Virus - Mã độc?<span class="num">(11)</span></th>
+                <td><input type="checkbox" checked >Gỡ bỏ phần mềm diệt virus hoặc tắt chương trình diệt virus tự động.</td>
+                <td><input type="checkbox" checked>Click vào link/ file có chứa virus.</td>
+                <td><input type="checkbox" checked>Tự ý cài đặt các phần mềm free, phần mềm crack.</td>
+                <td><input type="checkbox" checked>Truy cập vào các trang website không lành mạnh: web crack, web đen...</td>
+            </tr>
+            <tr>
+                <th>Rủi ro khi máy tính bị nhiễm virus?<span class="num">(12)</span></th>
+                <td><input type="checkbox" checked > Thông tin, dữ liệu trên máy tính bị đánh cắp/ mã hóa.</td>
+                <td><input type="checkbox" checked> Virus gây tiêu tốn tài nguyên hệ thống: máy tính chạy rất chậm, bị treo hoặc tự động tắt máy hay khởi động lại…</td>
+                <td><input type="checkbox" checked >Virus gây phát tán thư quảng cáo, thu thập địa chỉ email, tấn công vào hệ thống mạng, hệ thống các Server Công ty.</td>
+                <td><input type="checkbox" checked >Virus phá huỷ dữ liệu: xoá hoặc làm hỏng các file hay dữ liệu lưu trữ.</td>
+            </tr>
+            <tr>
+                <th>Đối với các tài liệu in chứa thông tin quan trọng, bạn cần lưu ý điều gì <span class="num">(13)</span></th>
+                <td><input type="checkbox" checked >Tài liệu khi in ra cần lấy ngay </td>
+                <td><input type="checkbox" checked>Cần lưu chữ bản in trong tủ/Ngăn kéo có khóa</td>
+                <td><input type="checkbox" disabled >Tái sử dụng mặt in trắng để nháp hoặc in tài liệu</td>
+                <td><input type="checkbox" disabled >Các bản in không sử dụng nữa cần tổng hợp lại để cuối năm bán giấy vụ</td>
+            </tr>
+            <tr>
+                <th>Quy định sử dụng email Công ty là gì?<span class="num">(15)</span></th>
+                <td><input type="checkbox" checked >Không sử dụng email Công ty để trao đổi với bạn bè, người không liên quan tới công việc, không phải là đối tác Công ty.</td>
+                <td><input type="checkbox" checked >Chỉ sử dụng email Công ty cho công việc của Công ty.</td>
+                <td><input type="checkbox" disabled >Có thể sử dụng email cá nhân để trao đổi công việc (với đồng nghiệp, với Khách hàng, với đối tác...)</td>
+                <td><input type="checkbox" disabled>Có thể sử dụng email Công ty để đăng ký các tài khoản công cộng.</td>
+            </tr>
+            <tr>
+                <th>Tại sao khi gửi mail chứa thông tin quan trọng.. <span class="num">(17)</span></th>
+                <td><input type="checkbox" checked >Để phòng tránh bị lộ/ rò rỉ thông tin khi gửi mail</td>
+                <td><input type="checkbox" checked >Để phòng tránh thông tin bị đánh cắp trên đường truyền gửi mail </td>
+                <td><input type="checkbox" disabled >Để giảm dung lượng mail</td>
+            </tr>
+            <tr>
+                <th>Để phòng ngừa rủi ro bị lộ hoặc tra ra mật khẩu, mật khẩu cần theo quy định như thế nào? <span class="num">(18)</span></th>
+                <td><input type="checkbox" checked >Tránh sử dụng hoặc kết hợp các từ phổ biến, dãy số dễ suy đoán như User name, ngày tháng năm sinh, ngày kỷ niệm, số điện thoại, "1111", "123456", “password”...</td>
+                <td><input type="checkbox" disabled >Mật khẩu phải dài từ 6 ký tự trở lên.</td>
+                <td><input type="checkbox" checked >Thay đổi mật khẩu ngay khi phát hiện bị lộ hoặc thấy có dấu hiệu bị lộ.</td>
+                <td><input type="checkbox" checked >Mật khẩu cần bao gồm chữ hoa, chữ thường, số hoặc ký tự đặc biệt.</td>
+            </tr>
+            <tr>
+                <th>Đâu là quy định đặt mật khẩu của Công ty? <span class="num">(20)</span></th>
+                <td><input type="checkbox" checked >Mật khẩu cần có chứa chữ hoa, chữ thường, chứa số hoặc ký tự đặc biệt.</td>
+                <td><input type="checkbox" checked >Mật khẩu cần có độ dài >= 9 ký tự.</td>
+            </tr>
+            <tr>
+                <th>Đồng nghiệp cần mượn tài khoản để truy cập hệ thống, tool... theo bạn đâu là các hành động đúng <span class="num">(22)</span></th>
+                <td><input type="checkbox" checked >Không cho mượn vì người đó có thể vô tình thao tác sai, gây ảnh hưởng liên lụy với mình</td>
+                <td><input type="checkbox" checked >Không cho mượn vì có thể tiềm ẩn rủi ro người đó lợi dụng thực hiện một số hành vi không tốt.</td>
+                <td><input type="checkbox" checked >nói người đó đề nghị xin cấp tài nếu có công việc yêu cầu cần phải truy cập hệ thống</td>
+                <td><input type="checkbox" disabled >cho mượn vì cùng là đồng nghiệp, phục vụ để giải quyết công việc của Công Ty</td>
+            </tr>
+            <tr>
+                <th>Rủi ro nếu bạn cho người khác mượn tài khoản của mình là gì? <span class="num">(23)</span></th>
+                <td><input type="checkbox" checked >Người mượn có thể có hành vi không đúng với thông tin mình đã được chia sẻ trên hệ thống khiến mình phải chịu trách nhiệm về sự việc xảy ra.</td>
+                <td><input type="checkbox" checked >Người mượn có thể làm lộ thông tin tài khoản.</td>
+                <td><input type="checkbox" checked >Người mượn có thể vô tình thao tác sai với thông tin làm thông tin bị mất, chỉnh sửa khiến mình bị liên lụy và phải chịu trách nhiệm về sự việc xảy ra.</td>
+            </tr>
+            <tr>
+                <th>Trường hợp bạn không có mặt tại Công ty, đồng nghiệp cần file tài liệu có liên quan đang lưu trên máy tính của bạn để xử lý công việc, theo bạn đâu là cách xử lý phù hợp? <span class="num">(24)</span></th>
+                <td><input type="radio" disabled >Cung cấp mật khẩu đăng nhập máy tính cho đồng nghiệp và thay đổi mật khẩu ngay sau khi đi làm trở lại.</td>
+                <td><input type="radio" checked >Remote vào máy tính ở Công ty và gửi file cho đồng nghiệp.</td>
+            </tr>
+            <tr>
+                <th>Theo quy định của công ty, thời gian cho phép cài dặt chế độ màn hình chờ là bao lâu? <span class="num">(27)</span></th>
+                <td><input type="radio" disabled ><= 10 phút</td>
+                <td><input type="radio" checked> <= 5 phút</td>
+                <td><input type="radio" disabled ><= 8 phút</td>
+                <td><input type="radio" disabled ><= 6 phút</td>
+            </tr>
+            <tr>
+            <th>Đâu là hành động vi phạm quy định bảo mật an toàn thông tin? <span class="num">(28)</span></th>
+            <td><input type="checkbox" checked >Không lock màn hình khi rời khỏi vị trí làm việc.</td>
+            <td><input type="checkbox" checked >Để màn hình máy tính còn đang hoạt động khi ra về.</td>
+            <td><input type="checkbox" checked >Cung cấp user/password cho đồng nghiệp để truy cập hệ thống</td>
+            <td><input type="checkbox" disabled >Tắt máy tính khi ra về.</td>
+            </tr>
+            <tr>
+                <th>Quản lý các file tài liệu công việc trên máy tính như thế nào là đúng? <span class="num">(29)</span></th>
+                <td><input type="radio" disabled >Không phân thư mục rõ ràng, lưu trữ lẫn lộn ở các thư mục để người có mục đích xấu khi truy nhập được sẽ khó tìm kiếm thông tin.</td>
+                <td><input type="radio" disabled>File nào hay sử dụng thì lưu trữ tại Desktop.</td>
+                <td><input type="radio" checked >Không lưu trữ tại Desktop mà lưu trữ trong thư mục quản lý tài liệu công việc tương ứng theo cấu trúc rõ ràng, đảm bảo vừa bảo mật, vừa dễ tìm khi cần.</td>
+            </tr>
+            <tr>
+                <th>Làm thế nào để bảo quản thông tin, tài sản theo quy định của Công Ty ? <span class="num">(30)</span></th>
+                <td><input type="checkbox" checked >Bảo quản các thiết bị, latop, giấy tờ lưu trữ thông tin quan trọng ở nơi an toàn (Tủ có khóa, ngăn kéo có khóa...)khi không sử dụng.. </td>
+                <td><input type="checkbox" disabled>Chủ động tháo dỡ thiết bị phần cứng máy tính khi máy tính có vẫn đề, gặp trục trặc</td>
+                <td><input type="checkbox" checked >Không tự ý mang tài sản ra ngoài công ty</td>
+                <td><input type="checkbox" checked >sắp xếp vă bản giấy tờ gọn ngàng khi lưu trữ</td>
+            </tr>
+            <tr>
+                <th>Lưu ý khi trả lại latop đã mượn của Công Ty là gì <span class="num">(32)</span></th>
+                <td><input type="checkbox" checked >Xóa toàn bộ các thông tin mình đã lưu trữ trên latop đó</td>
+                <td><input type="checkbox" disabled >Fomat ổ cứng trước khi trả</td>
+                <td><input type="checkbox" checked >Không lưu lại Thông tin tài khoản đã đăng nhập.Nên đăng nhập ở chế độ ẩn danh</td>
+                <td><input type="checkbox" checked >Log out ra khỏi toàn bộ các website, tool đã đăng nhập</td>
+            </tr>
+            <tr>
+                <th>Bạn mượn tài sản của Công ty để phục vụ cho Công việc, tài sản đã sử dụng xong, không cần sử dụng nữa nhưng thời hạn đăng ký mượn vẫn còn vài hoặc nhiều ngày nữa. Đâu là hành động xử lý phù hợp.<span class="num">(33)</span></th>
+                <td><input type="radio" checked >Chủ động hoàn trả lại tài sản sau khi đã sử dụng xong vì vừa phòng tránh được rủi ro khi giữ tài sản, vừa để cho người khác có thể mượn khi cần, vừa để đỡ quên trả khi đã hết thời hạn.</td>
+                <td><input type="radio" disabled>Chờ đến thời hạn thì trả vì có thể phát sinh lại phải đi mượn lại.</td>
+                <td><input type="radio" disabled >Khi sử dụng xong, hỏi những người xung quanh xem có ai cần thì cho mượn.</td>
+            </tr>
+            <tr>
+                <th>Thủ tục để mang máy tính, thiết bị của Công ty ra ngoài Công ty (mang sang khách hàng, mang về nhà làm việc...)?<span class="num">(34)</span></th>
+                <td><input type="checkbox" checked >Cần lập thông tin đề xuất trên Tool xin quản lý bộ phận/ lãnh đạo phê duyệt</td>
+                <td><input type="checkbox" disabled >Có thể mang máy tính/ thiết bị ra ngoài Công ty ngay sau khi nhận được phê duyệt của quản lý bộ phận/ lãnh đạo.</td>
+                <td><input type="checkbox" checked >Liên hệ Hành chính để thực hiện các thủ tục xác nhận tài sản mang ra ngoài sau khi được quản lý bộ phận/ lãnh đạo phê duyệt</td>
+            </tr>
+            <tr>
+                <th>Bạn được phép mang máy tính ra ngoài Công ty khi thỏa mãn các điều kiện nào? <span class="num">(35)</span></th>
+                <td><input type="checkbox" disabled >Khi khách hàng có đề nghị mang theo máy tính khi sang khách hàng làm việc thì có thể mang ra mà không cần xin cấp phép.</td>
+                <td><input type="checkbox" checked >Khi việc mang đó được quản lý bộ phận/ lãnh đạo phê duyệt.</td>
+                <td><input type="checkbox" checked >Khi thực hiện các thủ tục xác nhận tài sản mang ra ngoài với Hành chính.</td>
+            </tr>
+            <tr>
+                <th>Khi phát sinh nhu cầu cần cài đặt phần mềm phục vụ cho công việc, theo bạn đâu là hành động đúng? <span class="num">(37)</span></th>
+                <td><input type="checkbox" checked >Kiểm tra phần mềm có thuộc quy định cho phép cài đặt không. Nếu có, thì nhờ Network/ IT cài đặt.</td>
+                <td><input type="checkbox" disabled >Tìm kiếm phần mềm trên mạng, nếu có phần mềm free thì chủ động download và cài đặt để sử dụng.</td>
+                <td><input type="checkbox" disabled >Liên hệ Network/ IT đề nghị cài đặt, ngay khi có phát sinh nhu cầu.</td>
+                <td><input type="checkbox" checked >Đề xuất quản lý/ lãnh đạo cho phép cài đặt nếu phần mềm ngoài quy định.</td>
+            </tr>
+            <tr>
+                <th>Theo các bạn, đâu là hành vi không đúng quy định? <span class="num">(38)</span></th>
+                <td><input type="checkbox" checked >Giấy tờ quan trọng, thiết bị để trên bàn làm việc khi ra về.</td>
+                <td><input type="checkbox" checked >Chủ động download và cài đặt phần mềm khi cần.</td>
+                <td><input type="checkbox" checked  >Mang máy tính, thiết bị ra ngoài khi quản lý đồng ý (bỏ qua thủ tục với hành chính).</td>
+                <td><input type="checkbox" checked >Chia sẻ, sử dụng chung tài khoản đăng nhập hệ thống.</td>
+            </tr>
+            <tr>
+                <th>Đâu là các thông tin được phép chia sẻ cho các đồng nghiệp trong Công ty?<span class="num">(42)</span></th>
+                <td><input type="checkbox" checked > Các quy định bảo mật của Công ty.</td>
+                <td><input type="checkbox" disabled> Thông tin nội bộ của Nhóm/ Bộ phận.</td>
+                <td><input type="checkbox" checked > Thông tin Công ty đã public ra bên ngoài Công ty.</td>
+                <td><input type="checkbox" checked > Các chính sách, chế độ dành cho nhân viên Công ty.</td>
+            </tr>
+            <tr>
+                <th>Các thông tin, tài liệu công việc có được phép chia sẻ ra ngoài phạm vi những người có liên quan không? Nếu có thì theo các hình thức nào? <span class="num">(43)</span></th>
+                <td><input type="radio" checked >Không được chia sẻ ra ngoài phạm vi những người có liên quan dưới bất cứ hình thức nào.</td>
+                <td><input type="radio" disabled >Có thể chia sẻ qua mail.</td>
+                <td><input type="radio" disabled >Có thể chia sẻ khi chuyện trò.</td>
+                <td><input type="radio" disabled >Có thể chia sẻ qua chat.</td>
+            </tr>
+            <tr>
+                <th>Bạn được phép copy, lưu trữ các tài liệu Công ty ở đâu? <span class="num">(45)</span></th>
+                <td><input type="checkbox"  >Trên các Server, Tool, trang mạng... không thuộc phạm vi quản lý của Công ty hoặc Khách hàng có liên quan.</td>
+                <td><input type="checkbox"  >Trên các thiết bị lưu trữ của các nhân chưa được cấp phép phê duyệt.</td>
+                <td><input type="checkbox" checked  >Trên Server Công ty, trong vùng phân quyền và được phép lưu trữ các tài liệu có liên quan.</td>
+                <td><input type="checkbox" checked >Trên máy tính làm việc của Công ty.</td>
+            </tr>
+            <tr>
+                <th>Đối với các thông tin, tài liệu công việc được chia sẻ, bạn có quyền như thế nào? <span class="num">(46)</span></th>
+                <td><input type="radio" disabled >Copy, lưu trữ ở bất cứ tài nguyên server, thiết bị, tài khoản... nào.</td>
+                <td><input type="radio" disabled>Chia sẻ cho bất cứ đồng nghiệp nào (nếu đồng nghiệp có nhu cầu)</td>
+                <td><input type="radio" disabled >Sử dụng cho mục đích của cá nhân.</td>
+                <td><input type="radio" checked >Sử dụng đúng mục đích được chia sẻ.</td>
+            </tr>
+            <tr>
+                <th>Đâu là quy định an ninh thông tin của Công ty? <span class="num">(47)</span></th>
+                <td><input type="checkbox" checked >Không sao chép, xóa sửa trái phép bất kỳ thông tin nào được chia sẻ.</td>
+                <td><input type="checkbox" checked >Thông tin phải được sử dụng đúng mục đích, đúng công việc cho phép.</td>
+                <td><input type="checkbox" checked >Không cố tình truy cập vào các thông tin không được phép.</td>
+                <td><input type="checkbox" disabled>Người quản lý tài liệu thông tin mật được quyền chia sẻ cho bất kỳ ai.</td>
+            </tr>
+            <tr>
+                <th>Để phòng ngừa bị mất thông tin, bị gián đoạn sử dụng thông tin khi cần, tài liệu thông tin công việc trên máy tính phải tuân thủ quy định như thế nào? <span class="num">(49)</span></th>
+                <td><input type="checkbox" >Thường xuyên backup thông tin lên các tài khoản/ thiết bị lưu trữ cá nhân.</td>
+                <td><input type="checkbox" checked >Thường xuyên backup lưu trữ thông tin lên server/ tools của công ty (vùng lưu trữ có liên quan).</td>
+                <td><input type="checkbox" checked >Thường xuyên backup thông tin lưu trữ ra thiết bị lưu trữ khác (ổ cứng rời, laptop) đã được cấp phép (nếu có).</td>
+            </tr>
+            <tr>
+                <th>Công ty có quy định nào đối với việc sử dụng laptop cá nhân tại Công ty? <span class="num">(50)</span></th>
+                <td><input type="radio" checked >Chỉ cho phép sử dụng trong trường hợp cần thiết, có đề xuất, được quản lý bộ phận/ lãnh đạo phê duyệt.</td>
+                <td><input type="radio" disabled >Cho phép sử dụng nếu tốc độ xử lý công việc hiệu quả hơn máy tính của Công ty.</td>
+                <td><input type="radio" disabled >Cho phép sử dụng đối với nhân viên mới.</td>
+                <td><input type="radio" disabled >Cho phép sử dụng đối với cấp quản lý.</td>
+            </tr>
+            <tr>
+                <th>Làm thế nào để có thể sử dụng laptop cá nhân tại Công ty? <span class="num">(51)</span></th>
+                <td><input type="checkbox" checked >Thực hiện đầy đủ các thủ tục đăng ký cần thiết với hành chính.</td>
+                <td><input type="checkbox" checked >Đề xuất với quản lý Bộ phận/ lãnh đạo và nhận được phê duyệt.</td>
+            </tr>
+            <tr>
+                <th>Khi hết thời hạn cho phép sử dụng laptop cá nhân tại Công ty, bạn cần làm gì? <span class="num">(52)</span></th>
+                <td><input type="checkbox"  >Tiếp tục sử dụng laptop cá nhân nếu vẫn cần.</td>
+                <td><input type="checkbox" checked >Chủ động liên hệ với Hành chính để làm thủ tục chấm dứt việc mang laptop cá nhân tới Công ty.</td>
+                <td><input type="checkbox" checked >Không mang laptop tới Công ty nữa khi đã hết thời hạn cho phép.</td>
+                <td><input type="checkbox" checked >Backup thông tin lên hệ thống Công ty và xóa sạch thông tin trên laptop cá nhân.</td>
+            </tr>
+            <tr>
+                <th>Những trường hợp nào không được phép sử dụng latop cá nhân tại Công ty <span class="num">(54)</span></th>
+                <td><input type="checkbox" checked >Khi việc mang latop đến công ty chưa được cấp phép/ phê duyệt</td>
+                <td><input type="checkbox" checked >Khi thời hạn cho phép sử dụng latop cá nhân đã hết </td>  
+            </tr>
+            <tr>
+                <th>Trong Công ty bạn được phép chụp ảnh ở những khu vực nào mà không cần xin phép? <span class="num">(55)</span></th>
+                <td><input type="radio" disabled >Khu vực làm việc của mình.</td>
+                <td><input type="radio" disabled>Khu vực phòng Server.</td>
+                <td><input type="radio" disabled >Toàn bộ các khu vực trong văn phòng.</td>
+                <td><input type="radio" checked >Khu vực sinh hoạt chung.</td>
+            </tr>
+            <tr>
+                <th>Nếu chụp ảnh ở khu vực làm việc thì có những rủi ro gì có thể xảy ra? <span class="num">(56)</span></th>
+                <td><input type="checkbox" checked >Vô tình chứa thông tin vị trí các phòng ban, vị trí thiết bị camera... Và bức ảnh có thể vô tình khiến thông tin bị khai thác để thực hiện hành vi xấu.</td>
+                <td><input type="checkbox" disabled >Nhân viên công ty có thể bị lộ mặt.</td>
+                <td><input type="checkbox" checked >Vô tình chụp cả màn hình máy tính đang xử lý công việc và bức ảnh có thể vô tình khiến thông tin bị lộ.</td>
+                <td><input type="checkbox" checked >Có thể thấy được các hình ảnh trang trí Công ty.</td>
+            </tr>
+            <tr>
+                <th>Bạn được Công ty cấp cho tài sản máy tính, thiết bị để làm việc, bạn có quyền như thế nào đối với tài sản đó?<span class="num">(57)</span></th>
+                <td><input type="radio" disabled >Được phép cho người khác mượn.</td>
+                <td><input type="radio" disabled >Được phép mang tài sản ra ngoài."</td>
+                <td><input type="radio" checked >Được phép sử dụng để làm việc và lưu trữ thông tin công việc.</td>
+                <td><input type="radio" disabled >Được phép tháo lắp, thay thế linh kiện.</td>
+            </tr>
+            <tr>
+                <th>Nếu bạn được giao phụ trách quản lý tài sản thiết bị của nhóm/ bộ phận, làm thế nào để phòng tránh các rủi ro mất mát tài sản theo quy định của Công ty?<span class="num">(58)</span></th>
+                <td><input type="checkbox" checked >Có ghi chép quản lý việc cho mượn và thu hồi tài sản và có xác nhận của người mượn/ trả rõ ràng.</td>
+                <td><input type="checkbox" checked>Chỉ cho những người có liên quan (được phép) mượn thiết bị.</td>
+                <td><input type="checkbox" disabled >Không đưa tài sản thiết bị đó cho bất cứ ai.</td>
+            </tr>
+            <tr>
+                <th>Bạn lưu trữ, quản lý các giấy tờ, thông tin quan trọng (kế toán, hợp đồng, hồ sơ nhân sự, thông tin về các hoạt động, sản phẩm kinh doanh...), quản lý bộ phận/ nhóm khác muốn xem/ mượn tài liệu hoặc muốn bạn cung cấp các thông tin. Bạn cần xử lý như thế nào cho đúng? <span class="num">(59) </span></th>
+                <td><input type="checkbox"  >Cung cấp, chia sẻ ngay khi có yêu cầu vì người đó là cấp quản lý.</td>
+                <td><input type="checkbox" >Cung cấp, chia sẻ nếu bản thân thấy phù hợp.</td>
+                <td><input type="checkbox" checked >Chỉ cung cấp, chia sẻ thông tin khi quản lý/ lãnh đạo đã xác nhận đồng ý cho cung cấp, chia sẻ.</td>
+                <td><input type="checkbox" checked >Đề nghị người đó gửi thông tin đề xuất cho quản lý của mình/ lãnh đạo phê duyệt (tùy theo mức độ quyền hạn đối với thông tin cần chia sẻ).</td>
+            </tr>
+            <tr>
+                <th>Máy tính của bạn gặp phải sự cố, có vẻ liên quan đến phần cứng bạn sẽ xử lý như thế nào cho đúng ? <span class="num">(61)</span></th>
+                <td><input type="radio" disabled >Nhờ đồng nghiệp hỗ trợ tháo máy kiểm tra vì chờ Network/ IT sẽ lâu</td>
+                <td><input type="radio" checked >Liên lạc với Network /IT nhờ hỗ trợ</td>
+                <td><input type="radio" disabled >Nếu có kiến thức về kỹ thuật thì sẽ chủ động tự tháo máy kiểm tra và xử lý cho nhanh</td>
+            </tr>
+            <tr>
+                <th>Trường hợp bạn tự ý tháo máy tính xử lý sự cố thì có thể gặp phải các rủi ro nào? <span class="num">(62)</span></th>
+                <td><input type="checkbox" checked >Gây thêm lỗi khác cho máy tính và phải chịu chi phí sửa chữa nếu phải nhờ dịch vụ bên ngoài.</td>
+                <td><input type="checkbox" checked >Nếu máy tính bị mất linh kiện thì sẽ phải chịu trách nhiệm bồi thường.</td>
+                <td><input type="checkbox" disabled >Vi phạm quy định của Công ty và phải nộp phạt</td>
+                <td><input type="checkbox" checked >Vi phạm quy định của Công ty, có thể bị khiển trách.</td>
+            </tr>
+            <tr>
+                <th>Trường hợp bạn phát hiện thấy có chập cháy nhỏ trong văn phòng bạn cần làm gì <span class="num">(65)</span></th>
+                <td><input type="checkbox" checked >Tham gia dập lửa bằng các dụng cụ phù hợp để tránh lửa lây lan.</td>
+                <td><input type="checkbox" checked >Báo ngay cho hành chính để thông báo cho những người có liên quan xử lý.</td>
+            </tr>
+            <tr>
+                <th>Đâu là sự cố về an toàn thông tin?<span class="num">(66)</span></th>
+                <td><input type="checkbox" checked >Máy tính bị nhiễm virus gây mất data.</td>
+                <td><input type="checkbox" checked >Nhân viên vi phạm quy định để lộ thông tin ra bên ngoài.</td>
+                <td><input type="checkbox" checked >Server lưu trữ data của bộ phận hoặc của dự án bị hỏng.</td>
+                <td><input type="checkbox" checked >Laptop, thiết bị lưu trữ hoặc thiết bị test bị mất.</td>
+            </tr>
+            <tr>
+                <th>Sự cố an ninh xảy ra có thể tác động đến thông tin như thế nào? <span class="num">(67)</span></th>
+                <td><input type="checkbox" checked >Làm thông tin không thể kết nối được.</td>
+                <td><input type="checkbox" checked >Làm thông tin bị lộ ra bên ngoài.</td>
+                <td><input type="checkbox" checked >Làm thông tin bị phá hủy, bị mất.</td>
+                <td><input type="checkbox" checked >Làm thông tin bị thay đổi.</td>
+            </tr>
+            <tr>
+                <th>Hành động nào sau đây có thể gây rủi ro về an toàn an ninh thông tin? <span class="num">(68)</span></th>
+                <td><input type="checkbox" checked >Cung cấp user/password đăng nhập vào máy tính của mình cho đồng nghiệp để nhờ xử lý giúp công việc gấp.</td>
+                <td><input type="checkbox" checked >Để quên thẻ nhân viên ở ngoài khu vực làm việc/ ngoài công ty.</td>
+                <td><input type="checkbox" checked >Chia sẻ các file công việc lên các công cụ chia sẻ file/ hệ thống public: Google Drive, GitHub...</td>
+                <td><input type="checkbox" checked>Gửi cho bạn bè các tài liệu nội bộ của Công ty để tham khảo.</td>
+            </tr>
+            <tr>
+                <th>Nếu bạn phát hiện thấy đồng nghiệp đang có hành vi không đúng liên quan tới quy định bảo mật thông tin, bạn nên xử lý như thế nào để tránh rủi ro cho Công ty. <span class="num">(69)</span></th>
+                <td><input type="checkbox" checked >Nếu hành vi đó có mức độ nghiêm trọng thấp (cho mượn thẻ, lưu trữ các file công việc ở Desktop,...) thì sẽ nhắc nhở đồng nghiệp sửa lỗi và tránh lặp lại.</td>
+                <td><input type="checkbox" checked >	
+                    Nếu hành vi đó có tính chất nghiêm trọng có thể gây ra ảnh hưởng lớn hoặc tiềm ẩn nhiều rủi ro (chia sẻ tài liệu thông tin của Công ty ra bên ngoài, thực hiện hành vi lấy cắp, xem trộm thông tin...) thì yêu cầu người đó dừng hành vi và báo báo ngay cho cấp quản lý hoặc quản lý cấp cao để giải quyết</td>
+                <td><input type="checkbox" disabled >Nếu hành vi đó có tính chất nghiêm trọng có thể gây ra ảnh hưởng lớn hoặc tiềm ẩn nhiều rủi ro (chia sẻ tài liệu thông tin của Công ty ra bên ngoài, thực hiện hành vi lấy cắp, xem trộm thông tin...) thì yêu cầu người đó dừng hành vi và chỉ báo cáo quản lý trong trường hợp người đó vẫn tiếp tục vi phạm.</td>
+                <td><input type="checkbox" disabled>Không nên tham gia vì sẽ ảnh hưởng tới quan hệ đồng nghiệp.</td>
+            </tr>
+            <tr>
+                <th>Khi nhân viên nghỉ việc, hành động nào sau đây vi phạm an toàn bảo mật thông tin?<span class="num">(71)</span></th>
+                <td><input type="checkbox" checked >Lưu trữ các tài liệu, data liên quan tới công việc, Công ty về nhà để khi cần có thể sử dụng.</td>
+                <td><input type="checkbox" checked >Lưu trữ các tài liệu, data liên quan tới công việc, Công ty lên các tài khoản cá nhân (Google Drive, GitHub,..) để khi cần có thể sử dụng.</td>
+                <td><input type="checkbox" disabled >Lưu trữ toàn bộ tài liệu liên quan đến bộ phận/dự án lên server và bàn giao cho quản lý trực tiếp sau đó xóa data ở máy tính làm việc.</td>
+            </tr>
+            <tr>
+                <th>Đối với các văn bản chứa thông tin quan trọng, thông tin công việc, không sử dụng lưu trữ nữa, theo quy định nên sử lý như thế nào ? <span class="num">(72)</span></th>
+                <td><input type="checkbox" disabled >Tổng hợp bán giấy vụn để bổ sung vào quỹ.</td>
+                <td><input type="checkbox" checked >Cắt xé nhỏ bằng máy hủy hoặc thủ công để loại bỏ</td>
+                <td><input type="checkbox" checked >Nếu là văn bản được phân công quản lý lưu trữ, khi bỏ đi cần có sự đồng ý, phê  duyệt của các cấp quản lý/ lãnh đạo có liên quan</td>
+                <td><input type="checkbox" checked>Nếu là văn bản được phân công quản lý lưu trữ, khi loại bỏ cần có sự tham gia chứng kiến của một số người có lien quan</td>
+            </tr>
+            <tr>
+                <th>Trách nhiệm bảo mật thông tin thuộc về ai?<span class="num">(74)</span></th>
+                <td><input type="checkbox" checked >Cấp quản lý Công ty.</td>
+                <td><input type="checkbox" checked >Cấp lãnh đạo Công ty.</td>
+                <td><input type="checkbox" checked >Nhân viên Công ty.</td>
+            </tr>
+            <tr>
+                <th>Những vấn đề bảo mật an toàn an ninh thông tin nào có thể gặp phải? <span class="num">(75)</span></th>
+                <td><input type="checkbox" checked >Thông tin bị xem trộm do chia sẻ tài khoản đăng nhập máy tính.</td>
+                <td><input type="checkbox" checked >Các thông tin lưu trữ trên máy tính bị phá hủy do máy nhiễm virus.</td>
+                <td><input type="checkbox" checked >Đồng nghiệp xem trộm/ lấy trộm thông tin do máy tính quên không lock khi rời khỏi chỗ ngồi.</td>
+                <td><input type="checkbox" checked >Thẻ nhân viên bị rơi vào tay kẻ xấu do bảo quản không cẩn thận.</td>
+            </tr>
+            <tr>
+                <th>Chính sách chất lượng, bảo mật của công ty "RUN_CS_Quality - Security" được lưu trữ ở đâu trên WE?<span class="num">(76)</span></th>
+                <td><input type="radio" checked >Trong thư mục "Policy" ở mục "General"</td>
+                <td><input type="radio" disabled >Trong thư mục "Policy" ở mục "Tool"</td>
+            </tr>
+            <tr>
+                <th>Bạn là nhân viên của Công ty, bạn có quyền và nghĩa vụ gì? <span class="num">(77)</span></th>
+                <td><input type="checkbox" disabled >Có quyền ra vào mọi khu vực của Công ty.</td>
+                <td><input type="checkbox" checked >Tham gia khóa đào tạo về bảo mật an toàn an ninh thông tin khi có yêu cầu.</td>
+                <td><input type="checkbox" checked >Có quyền truy cập vào mọi thông tin của bộ phận trực thuộc.</td>
+                <td><input type="checkbox" checked >Thực hiện theo các quy trình, quy định bảo mật của Công ty.</td>
+            </tr>
+            <tr>
+                <th>Những nhân tố nào có thể gây nguy hại tới thông tin của Công ty mà chúng ta cần cảnh giác, phòng tránh?<span class="num">(78)</span></th>
+                <td><input type="checkbox" checked >Hacker.</td>
+                <td><input type="checkbox" checked >Người ngoài tới làm việc, giao hàng hóa, người sửa chữa máy tính/ văn phòng.</td>
+                <td><input type="checkbox" checked >Virus.</td>
+                <td><input type="checkbox" checked >Đồng nghiệp.</td>
+            </tr>
+            <tr>
+                <th>Theo bạn, trong các tình huống sau ,tình huống nào vi phạm quy đị về bảo mật <span class="num">(79)</span></th>
+                <td><input type="checkbox" disabled >Chia sẻ tên,Website,địa chỉ cty cho bạn bè</td>
+                <td><input type="checkbox" checked >Chia sẻ công khai thông tin cá nhân(như địa chỉ, số điện thoại, CMT/CCCD, số hộ chiếu...)</td>
+                <td><input type="checkbox" checked >Forward mail công việc vào maik cá nhân</td>
+                <td><input type="checkbox" checked >Chia sẻ các tài liệu quy trình, quy định, hướng dẫn, biểu mẫu của công ty cho bạn bè người quen bên ngoài công ty</td>
+            </tr>
+            <tr>
+                <th>Nếu xảy ra sự cố trong văn phòng (chập cháy, có người đột nhập…), bạn cần tra cứu thông tin liên lạc thì bạn có thể tìm kiếm ở đâu? <span class="num">(80)</span></th>
+                <td><input type="radio" checked >Tìm file "RUN_DS lien lac ISMS" trong thư mục "Information" ở mục "ISMS"</td>
+                <td><input type="radio" disabled>Tìm file "RUN_DS lien lac ISMS" trong thư mục "Rule" ở mục "ISMS"</td>
+                <td><input type="radio" disabled >Tìm file "RUN_DS lien lac ISMS" trong thư mục "Policy" ở mục "ISMS"</td>
+            </tr>
+            <tr>
+                <th>Đối với thông tin cá nhân( của khách hàng, đồng nhiệp, đối tác)bạn nắm bắt, bạn không được phép làm gì? <span class="num">(81)</span></th>
+                <td><input type="checkbox" checked >Sử dụng cho các mục đích cá nhân, mục đích ngoài thỏa thuận với khách hàng.</td>
+                <td><input type="checkbox" disabled >Sử dụng các giải pháp bảo mật, phòng tránh rủi ro đối với thông tin cá nhân.</td>
+                <td><input type="checkbox" checked >Chia sẻ cho người không thực sự liên quan</td>
+                <td><input type="checkbox" checked >Làm rò rỉ Thông tin cá nhân</td>
+            </tr>
+            <tr>
+                <th>Tại sao không được phép lưu trữ mật khẩu đăng nhập các hệ thống, lưu trữ các ứng dụng, link hệ thống của công ty, khách hàng trên tài khoản google?<span class="num">(85)</span></th>
+                <td><input type="checkbox" checked >Vì nếu tài khoản google bị lộ, nếu lưu mật khẩu truy cập thì nghiễm nhiên người đó có thể đăng nhập các hệ thống một cách dễ dàng, các thông tin trên các hệ thống có thể bị rò rỉ, bị phá hoại gây mất mát, sai lệch…</td>
+                <td><input type="checkbox" checked>Vì nếu tài khoản google bị lộ, các ứng dụng, link hệ thống đã lưu trữ có thể bị khai thác, tìm cách truy cập trái phép khiến thông tin trên hệ thống có thể gặp phải rủi ro.</td>
+            </tr>
+            <tr>
+                <th>Trường hợp được cấp phép lưu trữ tài liệu công việc trên GGDrive, tài liệu được phép chia sẻ cho tài khoản google nào của nhân viên có liên quan? <span class="num">(86)</span></th>
+                <td><input type="radio" checked >Tài khoản google được nhân viên tạo bằng tài khoản email công ty (...@runsystem.net)</td>
+                <td><input type="radio" disabled >Tài khoản gmail cá nhân của nhân viên.</td>
+            </tr>
+            <tr>
+                <th>Làm thế nào để tăng cường tính bảo mật cho thông tin công việc, thông tin khách hàng... lưu trữ trên các hệ thống<span class="num">(87)</span></th>
+                <td><input type="checkbox" checked > Đặt mật khẩu tuân theo quy tắc đã quy định</td>
+                <td><input type="checkbox" checked> Bật chế độ mật khẩu 2 lớp</td>
+            </tr>
+            <tr>
+                <th>Bạn không tuân thủ các quy định của công ty, để xảy ra sự cố gây ảnh hưởng tới công ty, khách hàng (như mật khẩu không theo quy định bị dò ra khiến thông tin bị truy cập trái phép, lưu trữ thông tin công ty, khách hàng trên hệ thống ngoài quy định chưa được cấp phép bị phát hiện...), theo quy định, bạn sẽ bị xử phạt như thế nào?<span class="num">(88)</span></th>
+                <td><input type="checkbox" disabled >Bị nhắc nhở nhẹ nhàng.</td>
+                <td><input type="checkbox" checked >Nếu không để lại hậu quả nghiêm trọng hoặc gây nguy cơ rủi ro cao tới Công ty như rủi ro tài chính, tài nguyên, rủi ro về khách hàng thì bị kéo dài thời hạn xem xét nâng lương hoặc cách chức đối với các nhận sự đang giữ các chức vụ nhất định.</td>
+                <td><input type="checkbox" checked >Nếu gây ảnh hưởng hoặc hậu quả nghiêm trọng tới công ty thì sẽ bị sa thải và phải chịu trách nhiệm đền bù những thiệt hại đã gây ra.</td>
+            </tr>
+            <tr>
+                <th>Trong trường hợp muốn tiếp tục sử dụng latop cá nhân sau khi hết thời hạn đăng ký sử dụng thì bạn cần phải làm gì <span class="num">(53)</span></th>
+                <td><input type="radio" disabled >Chỉ cần thông báo cho quản lý trước thời hạn là được </td>
+                <td><input type="radio" checked>Đề xuất xin gia hạn với quản lý/Lãnh đạo trước thời hạn và thông tin cho Hành chính năm bắt</td>
+                <td><input type="radio" disabled >Nếu do yêu cầu của công việc thì không cần Thông báo</td>
+                <td><input type="radio" disabled >Chỉ cần thông báo hành chính trước thời hạn để nắm bắt là được</td>
+            </tr> 
+            <tr>
+                <th>Bạn có nhu cầu thay đổi, nâng cấp máy tính cấu hình cao hơn, bạn cần làm gì?<span class="num"> (63)</span></th>
+                <td><input type="radio" disabled >Liên hệ với Hành chính để đề xuất thay đổi, nâng cấp máy tính.</td>
+                <td><input type="radio" disabled >Liên hệ với Network/ IT để đề xuất thay đổi, nâng cấp máy tính.</td>
+                <td><input type="radio" checked>Lập đề xuất xin quản lý bộ phận/ lãnh đạo phê duyệt, đồng thời thông tin cả cho Hành chính và Network/ IT nắm bắt.</td>
+            </tr>
+        
+        </tbody>
+
+        </table>
+    </form>
+
+    <!-- 67 -->
+   </div>
+   <script>
+    $(document).ready(function(){
+      $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable tr").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+    </script>
+    
+</body>
+</html>
